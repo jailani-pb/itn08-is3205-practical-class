@@ -1,3 +1,3 @@
-## Student UML Diagram
+## Student UML Class Diagram
 
-![alt text][./StudentUML.png]
+![Student UML Class][https://github.com/jailanihar/itn08-is3205-practical-class/blob/master/week2/StudentUML.png]
