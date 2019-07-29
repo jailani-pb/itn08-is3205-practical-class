@@ -38,6 +38,15 @@ public class Player {
 			}
 		}
 	}
+	
+	public String interact(NonPlayableCharacter npc) {
+		return npc.talk(this);
+	}
+	
+	public void attack(NonPlayableCharacter npc) {
+		npc.reduceHealth(15);
+		npc.hostile = true;
+	}
 }
 
 

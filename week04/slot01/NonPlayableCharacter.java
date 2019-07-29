@@ -7,6 +7,7 @@ public class NonPlayableCharacter {
 	private int health = 100;
 	private static int numberOfNPC = 0;
 	private String[] dialogs;
+	public boolean hostile = false;
 	
 	public NonPlayableCharacter(String name, int maxNoDialogs) {
 		this.name = name;
@@ -53,6 +54,21 @@ public class NonPlayableCharacter {
 				}
 			}
 		}
+	}
+	
+	public String talk(Player player) {
+		if(hostile) {
+			this.attack(player);
+			return "Antah Kau! " + player.name 
+					+ ", CurrentHealth: " + player.getHealth();
+		} else {
+			int index = (int) (Math.random() * dialogs.length - 1);
+			return "To " + player.name + ": " + dialogs[index];
+		}
+	}
+	
+	public void attack(Player player) {
+		player.reduceHealth(10);
 	}
 	
 }
