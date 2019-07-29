@@ -2,7 +2,7 @@ package week2;
 
 public class Student {
 
-	String id;
+	protected String id;
 	String name;
 	
 	public Student(String sId, String sName) {
