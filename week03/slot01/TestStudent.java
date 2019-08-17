@@ -1,4 +1,4 @@
-package week3.slot1;
+package week03.slot01;
 
 public class TestStudent {
 

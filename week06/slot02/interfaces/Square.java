@@ -1,6 +1,6 @@
-package week06.slot01.abstraction;
+package week06.slot02.interfaces;
 
-public class Square extends Shape2D {
+public class Square extends Shape2D implements Clickable {
 
 	private double side;
 
@@ -26,6 +26,12 @@ public class Square extends Shape2D {
 
 	public double getPerimeter() {
 		return 4 * side;
+	}
+
+	@Override
+	public void click() {
+		System.out.println("Square colour, " + this.getColour() +
+				" with side, " + side + " is clicked.");
 	}
 	
 }

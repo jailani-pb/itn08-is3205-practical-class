@@ -1,6 +1,6 @@
-package week3.slot2;
+package week03.slot02;
 
-public class SpecificStudent extends week2.Student {
+public class SpecificStudent extends week02.Student {
 	
 	public SpecificStudent(String sId, String sName) {
 		super(sId, sName);

@@ -1,6 +1,6 @@
-package week06.slot01.abstraction;
+package week06.slot02.interfaces;
 
-public class Circle extends Shape2D {
+public class Circle extends Shape2D implements Clickable, Movable {
 
 	private double radius;
 	
@@ -26,6 +26,18 @@ public class Circle extends Shape2D {
 
 	public double getPerimeter() {
 		return Math.PI * radius * 2;
+	}
+
+	@Override
+	public void move() {
+		System.out.println("Circle colour, " + this.getColour() +
+				" with radius, " + radius + " is moved.");
+	}
+
+	@Override
+	public void click() {
+		System.out.println("Circle colour, " + this.getColour() +
+				" with radius, " + radius + " is clicked.");
 	}
 
 }

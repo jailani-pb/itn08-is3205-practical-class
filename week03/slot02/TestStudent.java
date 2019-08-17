@@ -1,4 +1,4 @@
-package week3.slot2;
+package week03.slot02;
 
 //import week3.slot1.Student;
 

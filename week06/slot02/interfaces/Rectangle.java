@@ -1,6 +1,6 @@
-package week06.slot01.abstraction;
+package week06.slot02.interfaces;
 
-public class Rectangle extends Shape2D {
+public class Rectangle extends Shape2D implements Movable {
 
 	private double length;
 	private double height;
@@ -39,6 +39,13 @@ public class Rectangle extends Shape2D {
 
 	public double getPerimeter() {
 		return (2 * length) + (2 * height);
+	}
+
+	@Override
+	public void move() {
+		System.out.println("Rectangle colour, " + this.getColour() +
+				" with length, " + length + 
+				" with height, " + height + " is moved.");
 	}
 	
 }
