@@ -1,0 +1,21 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" 
+		fx:controller="week14.slot01.javafx.MyGUIController" >
+	<HBox alignment="CENTER">
+		<Button text="1" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="2" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="3" prefWidth="50" prefHeight="50" />
+		<Button text="4" prefWidth="50" prefHeight="50" />
+		<Button text="5" prefWidth="50" prefHeight="50" />
+	</HBox>
+	<HBox alignment="CENTER">
+		<Button text="6" prefWidth="50" prefHeight="50" />
+		<Button text="7" prefWidth="50" prefHeight="50" />
+		<Button text="8" prefWidth="50" prefHeight="50" />
+		<Button text="9" prefWidth="50" prefHeight="50" />
+		<Button text="0" prefWidth="50" prefHeight="50" />
+	</HBox>
+	<Label prefWidth="250" prefHeight="50" />
+</VBox>

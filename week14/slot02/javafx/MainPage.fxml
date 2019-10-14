@@ -1,0 +1,14 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox>
+	<HBox>
+		<Label text="Data1:" />
+		<TextField />
+	</HBox>
+	<HBox>
+		<Label text="Data2:" />
+		<TextField />
+	</HBox>
+	<Button text="Save" />
+</VBox>

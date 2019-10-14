@@ -1,0 +1,28 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" 
+		fx:controller="week14.slot02.javafx.MyGUIController" >
+	<HBox alignment="CENTER">
+		<Button text="1" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="2" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="3" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="4" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="5" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+	</HBox>
+	<HBox alignment="CENTER">
+		<Button text="6" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="7" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="8" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="9" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+		<Button text="0" onAction="#numberClicked" prefWidth="50" prefHeight="50" />
+	</HBox>
+	<Label fx:id="labelNumber" prefWidth="250" prefHeight="50" />
+	<Button text="Submit" onAction="#submit" prefWidth="150" prefHeight="50" />
+	<Button text="Clear" onAction="#clear" prefWidth="150" prefHeight="50" />
+	<Label fx:id="labelWarning" prefWidth="250" prefHeight="50" />
+</VBox>
+
+
+
+
